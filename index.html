@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Match - Card Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 Memory Match</h1>
+            <p class="subtitle">Test your memory with this fun card matching game!</p>
+        </header>
+
+        <div class="menu" id="menu">
+            <h2>Select Difficulty</h2>
+            <div class="difficulty-buttons">
+                <button class="btn easy" data-difficulty="easy">Easy (4x4)</button>
+                <button class="btn medium" data-difficulty="medium">Medium (4x6)</button>
+                <button class="btn hard" data-difficulty="hard">Hard (6x6)</button>
+            </div>
+        </div>
+
+        <div class="game-stats hidden" id="stats">
+            <div>Moves: <span id="move-count">0</span></div>
+            <div>Pairs Found: <span id="pairs-found">0</span>/<span id="total-pairs">0</span></div>
+            <div>Time: <span id="timer">0</span>s</div>
+        </div>
+
+        <div class="board" id="board"></div>
+
+        <div class="game-over hidden" id="game-over">
+            <div class="game-over-content">
+                <h2>Congratulations! 🎉</h2>
+                <p>You completed the game in <span id="final-time">0</span> seconds!</p>
+                <p>Total moves: <span id="final-moves">0</span></p>
+                <button class="btn" id="play-again">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
